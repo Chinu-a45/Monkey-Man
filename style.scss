@@ -24,14 +24,14 @@ section.hero{
     background-color: #131111;
 
         nav{
-            padding-top: 1rem;
+            padding-top: 1.2rem;
             padding-bottom: 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             .left h1{
-                font-size: 0.89rem;
+                font-size: 1.5rem;
                 text-transform: uppercase;
                 font-weight: 400;
 
@@ -44,13 +44,13 @@ section.hero{
                 border-radius: 30px;
                 display: flex;
                 justify-content: space-around;
-                width: 30%;
+                width: 35%;
                 background-color: #1B1919;
                 padding: 0.4rem;
 
                 h4{
-                    font-size: 0.5rem;
-                    font-weight: 400;
+                    font-size: 0.8rem;
+                    font-weight: 300;
 
                     &:hover{
                         cursor:pointer;
@@ -60,7 +60,7 @@ section.hero{
 
             .right{
                 display: flex;
-                gap: .4rem;
+                gap: .6rem;
                 align-items: center;
 
 
@@ -69,12 +69,12 @@ section.hero{
                     border: 1px solid rgba(251, 255, 0, 0.663);
                     color: inherit;
                     background-color: transparent;
-                    font-size: 0.6rem;
-                    padding: 0.5rem 0.7rem;
-                    font-weight: 400;
-                    border-radius: 20px;
+                    font-family: inherit;
+                    font-size: 1rem;
+                    padding: 0.7rem 1.1rem;
+                    border-radius: 27px;
                     transition: all 0.2s ease;
-
+                    font-weight: 300;
                     &:hover{
                         cursor: pointer;
                     }
@@ -83,6 +83,107 @@ section.hero{
                         transform: scale(0.95);
                     }
                 }
+            }
+        }
+
+        .hero-content{
+            display: grid;
+            grid-template-areas: "part1 part1 part1"
+                                 "part2 part3 part4";
+            grid-template-columns: 1fr 2.3fr 1fr;
+
+            .part1{
+                grid-area: part1;
+                place-items: center;
+                padding-bottom: 1rem;
+
+                h1,h2{
+                    font-size: 4rem;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 109%;
+                }
+                h2{
+                    font-family: "Cabin Sketch", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+
+            }
+
+            .part2{
+                grid-area: part2;
+                
+                &>div{
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 1rem;
+
+                    img{
+                    width: 60%;
+                    background-color: #1B1919;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    }
+                }
+
+                p{
+                    font-size: 0.8rem;
+                    width: 70%;
+                    font-weight: 400;
+                    opacity: .7;
+                    font-family: inherit;
+                }
+
+            }
+
+            .part3{
+                grid-area: part3;
+
+                img{
+                    width: 100%;
+
+                }
+            }
+
+            .part4{
+                grid-row: part4;
+                place-items: end;
+
+                &>div{
+                    width: 66%;
+
+                    .side-content{
+                    text-align: center;
+                    padding: 1rem;
+                    width: 100%;
+                    border-bottom: 2px solid #CAFE3F;
+
+                    &:nth-child(1){
+                        padding-top: 0;
+                    }
+                    &:nth-last-child(1){
+                        border-bottom: none;
+                    }
+                    h4{
+                        font-size: 2.5rem;
+                        font-weight: 300;
+                        line-height: 110%;
+
+                        span{
+                            color: #CAFE3F;
+                        }
+                    }
+
+                    &>span{
+                        font-size: 0.8rem;
+                        color: #b6cb30f7;
+                        font-weight: 400;
+                    }
+                }
+                }
+
             }
         }
 }
@@ -117,11 +218,11 @@ section.monkey{
                 z-index: 1;
 
                 h4{
-                    font-size: 0.5rem;
+                    font-size: 1vw;
                     font-weight: 200;
 
                     span{
-                        font-size: 0.6rem;
+                        font-size: 1.3vw;
                         font-weight: 500;
                     }
                 }
@@ -139,7 +240,7 @@ section.monkey{
                 
                 h4{
                     font-weight: 300;
-                    font-size: 0.7rem;
+                    font-size: 1.5vw;
                 }
                 
                 img{
