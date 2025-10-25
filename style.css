@@ -59,7 +59,7 @@ section.hero nav .right {
   align-items: center;
 }
 section.hero nav .right button {
-  border: 2px solid rgba(251, 255, 0, 0.663);
+  border: 1px solid rgba(251, 255, 0, 0.663);
   color: inherit;
   background-color: transparent;
   font-size: 0.6rem;
