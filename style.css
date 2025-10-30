@@ -157,9 +157,41 @@ section.hero .hero-content .part4 > div .side-content > span {
   font-weight: 400;
 }
 
+section.mid {
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+section.mid .part1 h3 {
+  font-family: "Cabin Sketch";
+  font-size: 1.5rem;
+}
+section.mid .part1 span {
+  font-size: 2.5rem;
+  font-family: "poppins";
+}
+section.mid .part2 {
+  width: 30%;
+}
+section.mid button {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  color: rgba(255, 255, 255, 0.727);
+  background-color: black;
+  font-size: 3rem;
+  border: 2px solid rgb(46, 46, 46);
+  border-top-width: 4px;
+  border-block-width: 4px;
+  border-radius: 15px;
+}
+section.mid .bt2 {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
 section.monkey {
-  padding: 1rem;
-  border: 1px solid white;
+  padding: 0rem 2rem;
   display: flex;
   gap: 2rem;
 }
