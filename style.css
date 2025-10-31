@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -19,11 +20,23 @@ body {
   background-color: #000;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 section.hero {
+  width: 100%;
   padding: 0 2rem;
   background-color: #131111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section.hero nav {
+  width: 100%;
+  max-width: 2000px;
   padding-top: 1.2rem;
   padding-bottom: 2rem;
   display: flex;
@@ -43,7 +56,7 @@ section.hero nav .mid {
   display: flex;
   justify-content: space-around;
   width: 35%;
-  background-color: #1B1919;
+  background-color: #1b1919;
   padding: 0.4rem;
 }
 section.hero nav .mid h4 {
@@ -76,6 +89,7 @@ section.hero nav .right button:active {
   transform: scale(0.95);
 }
 section.hero .hero-content {
+  max-width: 2000px;
   display: grid;
   grid-template-areas: "part1 part1 part1" "part2 part3 part4";
   grid-template-columns: 1fr 2.3fr 1fr;
@@ -85,7 +99,8 @@ section.hero .hero-content .part1 {
   place-items: center;
   padding-bottom: 1rem;
 }
-section.hero .hero-content .part1 h1, section.hero .hero-content .part1 h2 {
+section.hero .hero-content .part1 h1,
+section.hero .hero-content .part1 h2 {
   font-size: 4rem;
   font-weight: 300;
   text-align: center;
@@ -98,6 +113,9 @@ section.hero .hero-content .part1 h2 {
 }
 section.hero .hero-content .part2 {
   grid-area: part2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section.hero .hero-content .part2 > div {
   width: 70%;
@@ -107,7 +125,7 @@ section.hero .hero-content .part2 > div {
 }
 section.hero .hero-content .part2 > div img {
   width: 60%;
-  background-color: #1B1919;
+  background-color: #1b1919;
   border-radius: 50%;
   padding: 0.5rem;
 }
@@ -127,6 +145,9 @@ section.hero .hero-content .part3 img {
 section.hero .hero-content .part4 {
   grid-row: part4;
   place-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section.hero .hero-content .part4 > div {
   width: 66%;
@@ -135,7 +156,7 @@ section.hero .hero-content .part4 > div .side-content {
   text-align: center;
   padding: 1rem;
   width: 100%;
-  border-bottom: 2px solid #CAFE3F;
+  border-bottom: 2px solid #cafe3f;
 }
 section.hero .hero-content .part4 > div .side-content:nth-child(1) {
   padding-top: 0;
@@ -149,7 +170,7 @@ section.hero .hero-content .part4 > div .side-content h4 {
   line-height: 110%;
 }
 section.hero .hero-content .part4 > div .side-content h4 span {
-  color: #CAFE3F;
+  color: #cafe3f;
 }
 section.hero .hero-content .part4 > div .side-content > span {
   font-size: 0.8rem;
@@ -158,6 +179,8 @@ section.hero .hero-content .part4 > div .side-content > span {
 }
 
 section.mid {
+  width: 100%;
+  max-width: 2000px;
   padding: 5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -191,6 +214,8 @@ section.mid .bt2 {
 }
 
 section.monkey {
+  width: 100%;
+  max-width: 2000px;
   padding: 0rem 2rem;
   display: flex;
   gap: 2rem;
@@ -200,32 +225,44 @@ section.monkey svg {
   width: 0;
   position: absolute;
 }
-section.monkey .monkey1, section.monkey .monkey2, section.monkey .monkey3 {
+section.monkey .monkey1,
+section.monkey .monkey2,
+section.monkey .monkey3 {
   background-color: #1b1919;
   padding: 1.3rem;
   flex-grow: 1;
   width: 10%;
   border-radius: 0.7rem;
 }
-section.monkey .monkey1 .outerwrapper, section.monkey .monkey2 .outerwrapper, section.monkey .monkey3 .outerwrapper {
+section.monkey .monkey1 .outerwrapper,
+section.monkey .monkey2 .outerwrapper,
+section.monkey .monkey3 .outerwrapper {
   position: relative;
 }
-section.monkey .monkey1 .outerwrapper .top, section.monkey .monkey2 .outerwrapper .top, section.monkey .monkey3 .outerwrapper .top {
+section.monkey .monkey1 .outerwrapper .top,
+section.monkey .monkey2 .outerwrapper .top,
+section.monkey .monkey3 .outerwrapper .top {
   position: absolute;
   color: rgba(255, 255, 255, 0.737);
   top: 0;
   right: 3%;
   z-index: 1;
 }
-section.monkey .monkey1 .outerwrapper .top h4, section.monkey .monkey2 .outerwrapper .top h4, section.monkey .monkey3 .outerwrapper .top h4 {
-  font-size: 1vw;
+section.monkey .monkey1 .outerwrapper .top h4,
+section.monkey .monkey2 .outerwrapper .top h4,
+section.monkey .monkey3 .outerwrapper .top h4 {
+  font-size: 0.8rem;
   font-weight: 200;
 }
-section.monkey .monkey1 .outerwrapper .top h4 span, section.monkey .monkey2 .outerwrapper .top h4 span, section.monkey .monkey3 .outerwrapper .top h4 span {
-  font-size: 1.3vw;
+section.monkey .monkey1 .outerwrapper .top h4 span,
+section.monkey .monkey2 .outerwrapper .top h4 span,
+section.monkey .monkey3 .outerwrapper .top h4 span {
+  font-size: 1rem;
   font-weight: 500;
 }
-section.monkey .monkey1 .outerwrapper .bottom, section.monkey .monkey2 .outerwrapper .bottom, section.monkey .monkey3 .outerwrapper .bottom {
+section.monkey .monkey1 .outerwrapper .bottom,
+section.monkey .monkey2 .outerwrapper .bottom,
+section.monkey .monkey3 .outerwrapper .bottom {
   position: absolute;
   bottom: 1%;
   left: 2%;
@@ -234,14 +271,20 @@ section.monkey .monkey1 .outerwrapper .bottom, section.monkey .monkey2 .outerwra
   color: white;
   gap: 0.4rem;
 }
-section.monkey .monkey1 .outerwrapper .bottom h4, section.monkey .monkey2 .outerwrapper .bottom h4, section.monkey .monkey3 .outerwrapper .bottom h4 {
+section.monkey .monkey1 .outerwrapper .bottom h4,
+section.monkey .monkey2 .outerwrapper .bottom h4,
+section.monkey .monkey3 .outerwrapper .bottom h4 {
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 1rem;
 }
-section.monkey .monkey1 .outerwrapper .bottom img, section.monkey .monkey2 .outerwrapper .bottom img, section.monkey .monkey3 .outerwrapper .bottom img {
+section.monkey .monkey1 .outerwrapper .bottom img,
+section.monkey .monkey2 .outerwrapper .bottom img,
+section.monkey .monkey3 .outerwrapper .bottom img {
   width: 4%;
 }
-section.monkey .monkey1 .wrapper, section.monkey .monkey2 .wrapper, section.monkey .monkey3 .wrapper {
+section.monkey .monkey1 .wrapper,
+section.monkey .monkey2 .wrapper,
+section.monkey .monkey3 .wrapper {
   clip-path: url(#clip);
   border-radius: 1rem;
   overflow: hidden;
@@ -249,16 +292,68 @@ section.monkey .monkey1 .wrapper, section.monkey .monkey2 .wrapper, section.monk
   flex-direction: column;
   position: relative;
 }
-section.monkey .monkey1 .wrapper .bg, section.monkey .monkey2 .wrapper .bg, section.monkey .monkey3 .wrapper .bg {
+section.monkey .monkey1 .wrapper .bg,
+section.monkey .monkey2 .wrapper .bg,
+section.monkey .monkey3 .wrapper .bg {
   height: 3rem;
-  background-color: #FA4121;
+  background-color: #fa4121;
 }
 section.monkey .monkey2 .wrapper .bg {
-  background-color: #FFB700;
+  background-color: #ffb700;
 }
 section.monkey .monkey2 .wrapper img {
   transform: scale(1.3);
 }
 section.monkey .monkey3 .wrapper .bg {
-  background-color: #61C15C;
+  background-color: #61c15c;
+}
+
+@media (max-width: 900px) {
+  main section.hero nav .left {
+    font-size: 1rem;
+  }
+  main section.hero nav .mid {
+    display: none;
+  }
+  main section.hero nav .right i {
+    display: none;
+  }
+  main section.hero .hero-content {
+    grid-template-areas: "part1" "part3" "part4" "part2";
+    grid-template-columns: 1fr;
+  }
+  main section.hero .hero-content .par1 {
+    place-content: center;
+  }
+  main section.hero .hero-content div.part2 {
+    align-items: center;
+  }
+  main section.hero .hero-content div.part4 {
+    margin-top: 2rem;
+    align-items: center;
+  }
+  main section.hero .hero-content div.part4 > div {
+    width: 100%;
+  }
+  main section.mid {
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+  main section.mid .part1, main section.mid .part2, main section.mid .part3 {
+    width: 100%;
+  }
+  main section.mid .part1 h3 {
+    font-size: 2rem;
+  }
+  main section.mid .part1 span {
+    font-size: 4rem;
+    line-height: 100%;
+  }
+  main section.monkey {
+    flex-direction: column;
+  }
+  main section.monkey .monkey1, main section.monkey .monkey2, main section.monkey .monkey3 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
